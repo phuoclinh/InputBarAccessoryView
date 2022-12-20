@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AutocompleteManager Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/AutocompleteManager" class="dashAnchor"></a>
+    <a title="AutocompleteManager Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (100% documented)</p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        AutocompleteManager Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AttachmentCell.html">AttachmentCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AttachmentCollectionView.html">AttachmentCollectionView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AttachmentManager.html">AttachmentManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AttachmentManager/Attachment.html">– Attachment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AutocompleteCell.html">AutocompleteCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AutocompleteManager.html">AutocompleteManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AutocompleteSession.html">AutocompleteSession</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AutocompleteTableView.html">AutocompleteTableView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ImageAttachmentCell.html">ImageAttachmentCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InputBarAccessoryView.html">InputBarAccessoryView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InputBarButtonItem.html">InputBarButtonItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InputBarButtonItem/Spacing.html">– Spacing</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InputBarSendButton.html">InputBarSendButton</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InputBarViewController.html">InputBarViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InputStackView.html">InputStackView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InputStackView/Position.html">– Position</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InputTextView.html">InputTextView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/KeyboardManager.html">KeyboardManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SeparatorLine.html">SeparatorLine</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/KeyboardEvent.html">KeyboardEvent</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/NSAttributedString.html">NSAttributedString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSAttributedString/Key.html">– Key</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UITextView.html">UITextView</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/AttachmentManagerDataSource.html">AttachmentManagerDataSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/AttachmentManagerDelegate.html">AttachmentManagerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/AutocompleteManagerDataSource.html">AutocompleteManagerDataSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/AutocompleteManagerDelegate.html">AutocompleteManagerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/InputBarAccessoryViewDelegate.html">InputBarAccessoryViewDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/InputItem.html">InputItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/InputPlugin.html">InputPlugin</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/AutocompleteCompletion.html">AutocompleteCompletion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/HorizontalEdgePadding.html">HorizontalEdgePadding</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/KeyboardNotification.html">KeyboardNotification</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:21InputBarAccessoryView011AttachmentsD0a">AttachmentsView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:21InputBarAccessoryView0A7Managera">InputManager</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>AutocompleteManager</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">AutocompleteManager</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt"><a href="../Protocols/InputPlugin.html">InputPlugin</a></span><span class="p">,</span> <span class="kt">UITextViewDelegate</span><span class="p">,</span> <span class="kt">UITableViewDelegate</span><span class="p">,</span> <span class="kt">UITableViewDataSource</span></code></pre>
+
+                </div>
+              </div>
+            
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Properties%20%5BPublic%5D"></a>
+                <a name="//apple_ref/swift/Section/Properties [Public]" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Properties%20%5BPublic%5D"></a>
+                  <h3 class="section-name"><span>Properties [Public]</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21InputBarAccessoryView19AutocompleteManagerC10dataSourceAA0ef4DataH0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/dataSource" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21InputBarAccessoryView19AutocompleteManagerC10dataSourceAA0ef4DataH0_pSgvp">dataSource</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A protocol that passes data to the <code>AutocompleteManager</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">dataSource</span><span class="p">:</span> <span class="kt"><a href="../Protocols/AutocompleteManagerDataSource.html">AutocompleteManagerDataSource</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21InputBarAccessoryView19AutocompleteManagerC8delegateAA0eF8Delegate_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/delegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21InputBarAccessoryView19AutocompleteManagerC8delegateAA0eF8Delegate_pSgvp">delegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A protocol that more precisely defines <code>AutocompleteManager</code> logic</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/AutocompleteManagerDelegate.html">AutocompleteManagerDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21InputBarAccessoryView19AutocompleteManagerC04textD0Xevp"></a>
+                    <a name="//apple_ref/swift/Property/textView" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21InputBarAccessoryView19AutocompleteManagerC04textD0Xevp">textView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A reference to the <code><a href="../Classes/InputTextView.html">InputTextView</a></code> that the <code>AutocompleteManager</code> is using</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private(set)</span> <span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">textView</span><span class="p">:</span> <span class="kt">UITextView</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21InputBarAccessoryView19AutocompleteManagerC09inputTextD0AA0ahD0CSgvp"></a>
+                    <a name="//apple_ref/swift/Property/inputTextView" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21InputBarAccessoryView19AutocompleteManagerC09inputTextD0AA0ahD0CSgvp">inputTextView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">inputTextView</span><span class="p">:</span> <span class="kt"><a href="../Classes/InputTextView.html">InputTextView</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21InputBarAccessoryView19AutocompleteManagerC14currentSessionAA0eH0CSgvp"></a>
+                    <a name="//apple_ref/swift/Property/currentSession" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21InputBarAccessoryView19AutocompleteManagerC14currentSessionAA0eH0CSgvp">currentSession</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An ongoing session reference that holds the prefix, range and text to complete with</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private(set)</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">currentSession</span><span class="p">:</span> <span class="kt"><a href="../Classes/AutocompleteSession.html">AutocompleteSession</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21InputBarAccessoryView19AutocompleteManagerC05tableD0AA0e5TableD0Cvp"></a>
+                    <a name="//apple_ref/swift/Property/tableView" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21InputBarAccessoryView19AutocompleteManagerC05tableD0AA0e5TableD0Cvp">tableView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code><a href="../Classes/AutocompleteTableView.html">AutocompleteTableView</a></code> that renders available autocompletes for the <code><a href="../Classes/AutocompleteManager.html#/s:21InputBarAccessoryView19AutocompleteManagerC14currentSessionAA0eH0CSgvp">currentSession</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">tableView</span><span class="p">:</span> <span class="kt"><a href="../Classes/AutocompleteTableView.html">AutocompleteTableView</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21InputBarAccessoryView19AutocompleteManagerC23appendSpaceOnCompletionSbvp"></a>
+                    <a name="//apple_ref/swift/Property/appendSpaceOnCompletion" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21InputBarAccessoryView19AutocompleteManagerC23appendSpaceOnCompletionSbvp">appendSpaceOnCompletion</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds an additional space after the autocompleted text when true.
+Default value is <code>TRUE</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">appendSpaceOnCompletion</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21InputBarAccessoryView19AutocompleteManagerC22keepPrefixOnCompletionSbvp"></a>
+                    <a name="//apple_ref/swift/Property/keepPrefixOnCompletion" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21InputBarAccessoryView19AutocompleteManagerC22keepPrefixOnCompletionSbvp">keepPrefixOnCompletion</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Keeps the prefix typed when text is autocompleted.
+Default value is <code>TRUE</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">keepPrefixOnCompletion</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21InputBarAccessoryView19AutocompleteManagerC29maxSpaceCountDuringCompletionSivp"></a>
+                    <a name="//apple_ref/swift/Property/maxSpaceCountDuringCompletion" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21InputBarAccessoryView19AutocompleteManagerC29maxSpaceCountDuringCompletionSivp">maxSpaceCountDuringCompletion</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Allows a single space character to be entered mid autocompletion.</p>
+
+<p>For example, your autocomplete is &ldquo;Nathan Tannar&rdquo;, the .whitespace deliminater
+set would terminate the session after &ldquo;Nathan&rdquo;. By setting <code>maxSpaceCountDuringCompletion</code>
+the session termination will disregard that number of spaces</p>
+
+<p>Default value is <code>0</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">maxSpaceCountDuringCompletion</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21InputBarAccessoryView19AutocompleteManagerC23deleteCompletionByPartsSbvp"></a>
+                    <a name="//apple_ref/swift/Property/deleteCompletionByParts" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21InputBarAccessoryView19AutocompleteManagerC23deleteCompletionByPartsSbvp">deleteCompletionByParts</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>When enabled, autocomplete completions that contain whitespace will be deleted in parts.
+This meands backspacing on &ldquo;@Nathan Tannar&rdquo; will result in &ldquo; Tannar&rdquo; being removed first
+with a second backspace action required to delete &ldquo;@Nathan&rdquo;</p>
+
+<p>Default value is <code>TRUE</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">deleteCompletionByParts</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21InputBarAccessoryView19AutocompleteManagerC21defaultTextAttributesXevp"></a>
+                    <a name="//apple_ref/swift/Property/defaultTextAttributes" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21InputBarAccessoryView19AutocompleteManagerC21defaultTextAttributesXevp">defaultTextAttributes</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The default text attributes</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">defaultTextAttributes</span><span class="p">:</span> <span class="p">[</span><span class="kt">NSAttributedString</span><span class="o">.</span><span class="kt">Key</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21InputBarAccessoryView19AutocompleteManagerC14paragraphStyleXevp"></a>
+                    <a name="//apple_ref/swift/Property/paragraphStyle" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21InputBarAccessoryView19AutocompleteManagerC14paragraphStyleXevp">paragraphStyle</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The NSAttributedString.Key.paragraphStyle value applied to attributed strings</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">paragraphStyle</span><span class="p">:</span> <span class="kt">NSMutableParagraphStyle</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21InputBarAccessoryView19AutocompleteManagerC11filterBlockySbAA0E7SessionC_AA0E10CompletionVtcvp"></a>
+                    <a name="//apple_ref/swift/Property/filterBlock" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21InputBarAccessoryView19AutocompleteManagerC11filterBlockySbAA0E7SessionC_AA0E10CompletionVtcvp">filterBlock</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A block that filters the <code><a href="../Structs/AutocompleteCompletion.html">AutocompleteCompletion</a></code>&lsquo;s sourced
+from the <code><a href="../Classes/AutocompleteManager.html#/s:21InputBarAccessoryView19AutocompleteManagerC10dataSourceAA0ef4DataH0_pSgvp">dataSource</a></code>, based on the <code><a href="../Classes/AutocompleteSession.html">AutocompleteSession</a></code>.
+The default function requires the <code><a href="../Structs/AutocompleteCompletion.html#/s:21InputBarAccessoryView22AutocompleteCompletionV4textSSvp">AutocompleteCompletion.text</a></code>
+string contains the <code><a href="../Classes/AutocompleteSession.html#/s:21InputBarAccessoryView19AutocompleteSessionC6filterSSvp">AutocompleteSession.filter</a></code>
+string ignoring case</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">filterBlock</span><span class="p">:</span> <span class="p">(</span><span class="kt"><a href="../Classes/AutocompleteSession.html">AutocompleteSession</a></span><span class="p">,</span> <span class="kt"><a href="../Structs/AutocompleteCompletion.html">AutocompleteCompletion</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Properties%20%5BPrivate%5D"></a>
+                <a name="//apple_ref/swift/Section/Properties [Private]" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Properties%20%5BPrivate%5D"></a>
+                  <h3 class="section-name"><span>Properties [Private]</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21InputBarAccessoryView19AutocompleteManagerC20autocompletePrefixesShySSGvp"></a>
+                    <a name="//apple_ref/swift/Property/autocompletePrefixes" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21InputBarAccessoryView19AutocompleteManagerC20autocompletePrefixesShySSGvp">autocompletePrefixes</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The prefices that the manager will recognize</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">autocompletePrefixes</span><span class="p">:</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt">String</span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21InputBarAccessoryView19AutocompleteManagerC25autocompleteDelimiterSetsXevp"></a>
+                    <a name="//apple_ref/swift/Property/autocompleteDelimiterSets" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21InputBarAccessoryView19AutocompleteManagerC25autocompleteDelimiterSetsXevp">autocompleteDelimiterSets</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The delimiters that the manager will terminate a session with
+The default value is: [.whitespaces, .newlines]</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">autocompleteDelimiterSets</span><span class="p">:</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt">CharacterSet</span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21InputBarAccessoryView19AutocompleteManagerC26autocompleteTextAttributesXevp"></a>
+                    <a name="//apple_ref/swift/Property/autocompleteTextAttributes" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21InputBarAccessoryView19AutocompleteManagerC26autocompleteTextAttributesXevp">autocompleteTextAttributes</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The text attributes applied to highlighted substrings for each prefix</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">autocompleteTextAttributes</span><span class="p">:</span> <span class="o">&lt;&lt;</span><span class="n">error</span> <span class="n">type</span><span class="o">&gt;&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Initialization"></a>
+                <a name="//apple_ref/swift/Section/Initialization" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Initialization"></a>
+                  <h3 class="section-name"><span>Initialization</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21InputBarAccessoryView19AutocompleteManagerCyXeXecfc"></a>
+                    <a name="//apple_ref/swift/Method/init(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21InputBarAccessoryView19AutocompleteManagerCyXeXecfc">init(for:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="k">for</span> <span class="nv">textView</span><span class="p">:</span> <span class="kt">UITextView</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/InputPlugin"></a>
+                <a name="//apple_ref/swift/Section/InputPlugin" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/InputPlugin"></a>
+                  <h3 class="section-name"><span>InputPlugin</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21InputBarAccessoryView19AutocompleteManagerC10reloadDatayyF"></a>
+                    <a name="//apple_ref/swift/Method/reloadData()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21InputBarAccessoryView19AutocompleteManagerC10reloadDatayyF">reloadData()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Reloads the InputPlugin&rsquo;s session</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">reloadData</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21InputBarAccessoryView19AutocompleteManagerC10invalidateyyF"></a>
+                    <a name="//apple_ref/swift/Method/invalidate()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21InputBarAccessoryView19AutocompleteManagerC10invalidateyyF">invalidate()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Invalidates the InputPlugin&rsquo;s session</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">invalidate</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21InputBarAccessoryView19AutocompleteManagerC06handleA02ofSbyXl_tF"></a>
+                    <a name="//apple_ref/swift/Method/handleInput(of:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21InputBarAccessoryView19AutocompleteManagerC06handleA02ofSbyXl_tF">handleInput(of:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Passes an object into the InputPlugin&rsquo;s session to handle</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">open</span> <span class="kd">func</span> <span class="nf">handleInput</span><span class="p">(</span><span class="n">of</span> <span class="nv">object</span><span class="p">:</span> <span class="kt">AnyObject</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>object</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A string to append</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/API%20%5BPublic%5D"></a>
+                <a name="//apple_ref/swift/Section/API [Public]" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/API%20%5BPublic%5D"></a>
+                  <h3 class="section-name"><span>API [Public]</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21InputBarAccessoryView19AutocompleteManagerC8registeryXeXeF"></a>
+                    <a name="//apple_ref/swift/Method/register(prefix:with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21InputBarAccessoryView19AutocompleteManagerC8registeryXeXeF">register(prefix:<wbr>with:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Registers a prefix and its the attributes to apply to its autocompleted strings</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">register</span><span class="p">(</span><span class="nv">prefix</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">with</span> <span class="nv">attributedTextAttributes</span><span class="p">:</span> <span class="p">[</span><span class="kt">NSAttributedString</span><span class="o">.</span><span class="kt">Key</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>prefix</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The prefix such as: @, # or !</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>attributedTextAttributes</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The attributes to apply to the NSAttributedString</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21InputBarAccessoryView19AutocompleteManagerC10unregister6prefixySS_tF"></a>
+                    <a name="//apple_ref/swift/Method/unregister(prefix:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21InputBarAccessoryView19AutocompleteManagerC10unregister6prefixySS_tF">unregister(prefix:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Unregisters a prefix and removes its associated cached attributes</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">unregister</span><span class="p">(</span><span class="nv">prefix</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>prefix</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The prefix such as: @, # or !</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21InputBarAccessoryView19AutocompleteManagerC8registeryXeXeF"></a>
+                    <a name="//apple_ref/swift/Method/register(delimiterSet:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21InputBarAccessoryView19AutocompleteManagerC8registeryXeXeF">register(delimiterSet:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Registers a CharacterSet as a delimiter</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">register</span><span class="p">(</span><span class="n">delimiterSet</span> <span class="nv">set</span><span class="p">:</span> <span class="kt">CharacterSet</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>delimiterSet</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>CharacterSet</code> to recognize as a delimiter</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21InputBarAccessoryView19AutocompleteManagerC10unregisteryXeXeF"></a>
+                    <a name="//apple_ref/swift/Method/unregister(delimiterSet:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21InputBarAccessoryView19AutocompleteManagerC10unregisteryXeXeF">unregister(delimiterSet:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Unregisters a CharacterSet</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">unregister</span><span class="p">(</span><span class="n">delimiterSet</span> <span class="nv">set</span><span class="p">:</span> <span class="kt">CharacterSet</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>delimiterSet</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>CharacterSet</code> to recognize as a delimiter</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21InputBarAccessoryView19AutocompleteManagerC12autocomplete4withyAA0E7SessionC_tF"></a>
+                    <a name="//apple_ref/swift/Method/autocomplete(with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21InputBarAccessoryView19AutocompleteManagerC12autocomplete4withyAA0E7SessionC_tF">autocomplete(with:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Replaces the current prefix and filter text with the supplied text</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">autocomplete</span><span class="p">(</span><span class="n">with</span> <span class="nv">session</span><span class="p">:</span> <span class="kt"><a href="../Classes/AutocompleteSession.html">AutocompleteSession</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>text</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The replacement text</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21InputBarAccessoryView19AutocompleteManagerC14attributedTextyXeXeF"></a>
+                    <a name="//apple_ref/swift/Method/attributedText(matching:fontSize:keepPrefix:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21InputBarAccessoryView19AutocompleteManagerC14attributedTextyXeXeF">attributedText(matching:<wbr>fontSize:<wbr>keepPrefix:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns an attributed string with bolded characters matching the characters typed in the session</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">attributedText</span><span class="p">(</span><span class="n">matching</span> <span class="nv">session</span><span class="p">:</span> <span class="kt"><a href="../Classes/AutocompleteSession.html">AutocompleteSession</a></span><span class="p">,</span>
+                         <span class="nv">fontSize</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mi">15</span><span class="p">,</span>
+                         <span class="nv">keepPrefix</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">NSMutableAttributedString</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>session</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code><a href="../Classes/AutocompleteSession.html">AutocompleteSession</a></code> to form an <code>NSMutableAttributedString</code> with</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An <code>NSMutableAttributedString</code></p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/UITextViewDelegate"></a>
+                <a name="//apple_ref/swift/Section/UITextViewDelegate" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/UITextViewDelegate"></a>
+                  <h3 class="section-name"><span>UITextViewDelegate</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21InputBarAccessoryView19AutocompleteManagerC04textD9DidChangeyXeXeF"></a>
+                    <a name="//apple_ref/swift/Method/textViewDidChange(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21InputBarAccessoryView19AutocompleteManagerC04textD9DidChangeyXeXeF">textViewDidChange(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">textViewDidChange</span><span class="p">(</span><span class="n">_</span> <span class="nv">textView</span><span class="p">:</span> <span class="kt">UITextView</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21InputBarAccessoryView19AutocompleteManagerC04textD0yXeXeF"></a>
+                    <a name="//apple_ref/swift/Method/textView(_:shouldChangeTextIn:replacementText:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21InputBarAccessoryView19AutocompleteManagerC04textD0yXeXeF">textView(_:<wbr>shouldChangeTextIn:<wbr>replacementText:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">textView</span><span class="p">(</span><span class="n">_</span> <span class="nv">textView</span><span class="p">:</span> <span class="kt">UITextView</span><span class="p">,</span> <span class="n">shouldChangeTextIn</span> <span class="nv">range</span><span class="p">:</span> <span class="kt">NSRange</span><span class="p">,</span> <span class="n">replacementText</span> <span class="nv">text</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/UITableViewDataSource"></a>
+                <a name="//apple_ref/swift/Section/UITableViewDataSource" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/UITableViewDataSource"></a>
+                  <h3 class="section-name"><span>UITableViewDataSource</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21InputBarAccessoryView19AutocompleteManagerC16numberOfSectionsyXeXeF"></a>
+                    <a name="//apple_ref/swift/Method/numberOfSections(in:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21InputBarAccessoryView19AutocompleteManagerC16numberOfSectionsyXeXeF">numberOfSections(in:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">numberOfSections</span><span class="p">(</span><span class="k">in</span> <span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21InputBarAccessoryView19AutocompleteManagerC05tableD0yXeXeF"></a>
+                    <a name="//apple_ref/swift/Method/tableView(_:numberOfRowsInSection:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21InputBarAccessoryView19AutocompleteManagerC05tableD0yXeXeF">tableView(_:<wbr>numberOfRowsInSection:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">tableView</span><span class="p">(</span><span class="n">_</span> <span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="p">,</span> <span class="n">numberOfRowsInSection</span> <span class="nv">section</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21InputBarAccessoryView19AutocompleteManagerC05tableD0yXeXeF"></a>
+                    <a name="//apple_ref/swift/Method/tableView(_:cellForRowAt:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21InputBarAccessoryView19AutocompleteManagerC05tableD0yXeXeF">tableView(_:<wbr>cellForRowAt:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">tableView</span><span class="p">(</span><span class="n">_</span> <span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="p">,</span> <span class="n">cellForRowAt</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UITableViewCell</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/UITableViewDelegate"></a>
+                <a name="//apple_ref/swift/Section/UITableViewDelegate" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/UITableViewDelegate"></a>
+                  <h3 class="section-name"><span>UITableViewDelegate</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21InputBarAccessoryView19AutocompleteManagerC05tableD0yXeXeF"></a>
+                    <a name="//apple_ref/swift/Method/tableView(_:didSelectRowAt:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21InputBarAccessoryView19AutocompleteManagerC05tableD0yXeXeF">tableView(_:<wbr>didSelectRowAt:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">tableView</span><span class="p">(</span><span class="n">_</span> <span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="p">,</span> <span class="n">didSelectRowAt</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21InputBarAccessoryView19AutocompleteManagerC15isCaseSensitiveSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isCaseSensitive" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21InputBarAccessoryView19AutocompleteManagerC15isCaseSensitiveSbvp">isCaseSensitive</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>If the autocomplete matches should be made by casting the strings to lowercase.
+Default value is <code>FALSE</code>
+DEPRICATED; will always return <code>FALSE</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">deprecated</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="s">"`isCaseSensitive` was replaced in favour of a more customizable `filterBlock: (String﹚ -&gt; (Bool﹚`"</span><span class="p">)</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">isCaseSensitive</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2022 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2022-05-05)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
