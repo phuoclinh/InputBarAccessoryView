@@ -278,7 +278,7 @@ open class InputBarAccessoryView: UIView {
     /// This is set automatically when `shouldAutoUpdateMaxTextViewHeight` is true.
     /// To control the height yourself, make sure to set `shouldAutoUpdateMaxTextViewHeight` to false.
     /// The default value is `0`
-    open var maxTextViewHeight: CGFloat = 0 {
+    open var maxTextViewHeight: CGFloat = 60 {
         didSet {
             textViewHeightAnchor?.constant = maxTextViewHeight
         }
